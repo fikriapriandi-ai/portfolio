@@ -1,0 +1,1333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moch Fikri Apriandi | Portfolio</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:28px;
+    color:#10b981;
+    cursor:pointer;
+}
+
+/* PARTICLES */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.particles{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+
+.particles span{
+    position:absolute;
+    display:block;
+    border-radius:50%;
+    background:rgba(16,185,129,.25);
+    animation:floatParticle linear infinite;
+}
+
+/* posisi masing-masing particle */
+
+.particles span:nth-child(1){
+    width:15px;
+    height:15px;
+    left:10%;
+    animation-duration:18s;
+}
+
+.particles span:nth-child(2){
+    width:25px;
+    height:25px;
+    left:25%;
+    animation-duration:22s;
+}
+
+.particles span:nth-child(3){
+    width:10px;
+    height:10px;
+    left:40%;
+    animation-duration:16s;
+}
+
+.particles span:nth-child(4){
+    width:30px;
+    height:30px;
+    left:55%;
+    animation-duration:24s;
+}
+
+.particles span:nth-child(5){
+    width:18px;
+    height:18px;
+    left:70%;
+    animation-duration:20s;
+}
+
+.particles span:nth-child(6){
+    width:12px;
+    height:12px;
+    left:80%;
+    animation-duration:17s;
+}
+
+.particles span:nth-child(7){
+    width:20px;
+    height:20px;
+    left:90%;
+    animation-duration:21s;
+}
+
+.particles span:nth-child(8){
+    width:14px;
+    height:14px;
+    left:60%;
+    animation-duration:19s;
+}
+
+@keyframes floatParticle{
+
+    0%{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    90%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-120px);
+        opacity:0;
+    }
+
+}
+
+/* OCEAN BACKGROUND */
+
+body{
+    position:relative;
+    overflow-x:hidden;
+}
+
+body::before,
+body::after{
+    content:'';
+    position:fixed;
+    border-radius:50%;
+    z-index:-1;
+    filter:blur(80px);
+    animation:floatOcean 20s ease-in-out infinite;
+}
+
+body::before{
+    width:500px;
+    height:500px;
+    background:rgba(59,130,246,0.15);
+    top:-100px;
+    left:-100px;
+}
+
+body::after{
+    width:600px;
+    height:600px;
+    background:rgba(16,185,129,0.15);
+    bottom:-200px;
+    right:-150px;
+    animation-delay:10s;
+}
+
+@keyframes floatOcean{
+
+    0%{
+        transform:translate(0,0);
+    }
+
+    25%{
+        transform:translate(50px,-30px);
+    }
+
+    50%{
+        transform:translate(0,50px);
+    }
+
+    75%{
+        transform:translate(-50px,-20px);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+
+}
+
+.nav-cv{
+    background:#10b981;
+    color:white !important;
+    padding:10px 18px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-cv:hover{
+    background:#059669;
+    transform:translateY(-2px);
+}
+
+.nav-cv i{
+    margin-right:6px;
+}
+
+#education{
+    padding-top:100px;
+}
+
+#education .section-title{
+    margin-left:0;
+    text-align:left;
+}
+
+.education-title{
+    margin-left:0;
+    padding-left:0;
+}
+
+/* EDUCATION TIMELINE */
+
+.education-timeline{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    margin-top:60px;
+
+    width:100%;
+}
+
+.education-timeline::before{
+    content:'';
+    position:absolute;
+    top:25px;
+    left:10%;
+    width:80%;
+    height:4px;
+    background:#10b981;
+    z-index:1;
+}
+
+.edu-item{
+    flex:1;
+    position:relative;
+    text-align:center;
+    z-index:2;
+}
+
+.edu-dot{
+    width:24px;
+    height:24px;
+    background:#10b981;
+    border-radius:50%;
+    margin:0 auto 25px;
+    border:5px solid white;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+.edu-card{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(12px);
+
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+min-height:280px;
+}
+
+.edu-date{
+    display:inline-block;
+    background:#d1fae5;
+    color:#047857;
+    padding:8px 15px;
+    border-radius:20px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.edu-card h3{
+    color:#10b981;
+    margin-bottom:10px;
+}
+
+.edu-card h4{
+    font-size:15px;
+    min-height:60px;
+    margin-bottom:15px;
+}
+
+.edu-card p{
+    line-height:1.7;
+    color:#555;
+}
+
+/* DARK MODE */
+
+body.dark .edu-card{
+    background:#1f2937;
+}
+
+body.dark .edu-card p,
+body.dark .edu-card h4{
+    color:#d1d5db;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.menu-toggle{
+    display:block;
+}
+
+nav ul{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    margin-top:20px;
+    gap:15px;
+}
+
+nav ul.active{
+    display:flex;
+}
+
+    .education-timeline{
+        flex-direction:column;
+    }
+
+    .education-timeline::before{
+        display:none;
+    }
+
+}
+
+/* DARK MODE */
+
+body.dark .education-card{
+background:#1f2937;
+color:#e5e7eb;
+}
+
+body.dark .education-card h4{
+color:#d1d5db;
+}
+
+body.dark .edu-year{
+background:#065f46;
+color:#d1fae5;
+}
+
+#theme-toggle{
+    border:none;
+    background:#10b981;
+    color:white;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+    position:relative;
+    overflow:visible;
+
+}
+
+#theme-toggle:hover{
+    transform:scale(1.1);
+}
+
+/* DARK MODE */
+
+body.dark{
+    background:#0f172a;
+    color:#e5e7eb;
+}
+
+body.dark header{
+    background:#111827;
+}
+
+body.dark nav a{
+    color:#e5e7eb;
+}
+
+body.dark .content-box,
+body.dark .timeline-content,
+body.dark .experience-card{
+    background:#1f2937;
+    color:#e5e7eb;
+}
+
+body.dark .hero-content p,
+body.dark .timeline-content p{
+    color:#d1d5db;
+}
+
+body.dark .logo,
+body.dark .section-title,
+body.dark .timeline-year,
+body.dark .experience-card h3{
+    color:#34d399;
+}
+
+body.dark footer{
+    background:#020617;
+}
+
+/* EXPERIENCE */
+
+.experience-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.experience-card{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(12px);
+
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.experience-card:hover{
+transform:translateY(-5px);
+}
+
+.experience-card h3{
+color:#10b981;
+margin-bottom:10px;
+}
+
+.experience-card span{
+font-weight:bold;
+color:#666;
+display:block;
+margin-bottom:15px;
+}
+
+.experience-card ul{
+padding-left:20px;
+line-height:1.8;
+}
+
+/* SKILLS */
+
+.skills-container{
+max-width:900px;
+margin:auto;
+}
+
+.skill{
+margin-bottom:25px;
+}
+
+.skill span{
+display:block;
+margin-bottom:8px;
+font-weight:600;
+}
+
+.progress{
+height:14px;
+background:#d1fae5;
+border-radius:50px;
+overflow:hidden;
+}
+
+.progress-bar{
+height:100%;
+background:#10b981;
+border-radius:50px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+html{scroll-behavior:smooth;}
+body{
+background:
+linear-gradient(
+180deg,
+#ecfeff 0%,
+#cffafe 25%,
+#d1fae5 60%,
+#a7f3d0 100%
+);
+color:#333;
+}
+/* HEADER */
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:90px;
+
+background:rgba(255,255,255,.9);
+backdrop-filter:blur(10px);
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 5%;
+
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo img{
+height:220px;
+width:auto;
+display:block;
+object-fit:contain;
+}
+
+nav ul{
+display:flex;
+align-items:center;
+list-style:none;
+gap:18px;
+}
+
+nav a{
+display:flex;
+align-items:center;
+gap:6px;
+
+text-decoration:none;
+color:#333;
+font-weight:600;
+
+transition:.3s;
+}
+
+nav a:hover{
+color:#10b981;
+}
+
+/* HOME */
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+padding:120px 8% 80px;
+
+background:
+radial-gradient(
+circle at top right,
+rgba(16,185,129,.25),
+transparent 40%
+);
+}
+
+.hero-content{
+flex:1;
+}
+
+.hero-content h3{
+color:#10b981;
+font-size:24px;
+margin-bottom:10px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.typing-text{
+    font-size:20px;
+    margin-bottom:20px;
+    color:#374151;
+}
+
+.typing-text span{
+    color:#10b981;
+    font-weight:700;
+    border-right:3px solid #10b981;
+    padding-right:5px;
+}
+
+.hero-content span{
+color:#10b981;
+}
+
+.hero-content p{
+font-size:18px;
+line-height:1.8;
+color:#555;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+background:#10b981;
+color:white;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+margin-right:10px;
+}
+
+.btn-outline{
+display:inline-block;
+border:2px solid #10b981;
+color:#10b981;
+padding:12px 28px;
+border-radius:8px;
+text-decoration:none;
+}
+
+.slider{
+width:380px;
+height:500px;
+position:relative;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:20px;
+opacity:0;
+transition:1s;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.slide.active{
+opacity:1;
+}
+
+/* SECTION */
+section{
+padding:30px 8%;
+}
+
+.section-title{
+font-size:40px;
+color:#10b981;
+margin-bottom:30px;
+}
+
+#about .section-title,
+#education .section-title,
+#experience .section-title,
+#skills .section-title,
+#history .section-title,
+#social .section-title{
+    text-align:left;
+}
+
+.content-box{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+/* TIMELINE */
+.timeline{
+position:relative;
+max-width:1000px;
+margin:auto;
+}
+
+.timeline::before{
+content:'';
+position:absolute;
+left:120px;
+top:0;
+width:4px;
+height:100%;
+background:#10b981;
+}
+
+.timeline-item{
+position:relative;
+padding-left:180px;
+margin-bottom:50px;
+}
+
+.timeline-year{
+position:absolute;
+left:0;
+width:90px;
+text-align:right;
+font-size:20px;
+font-weight:700;
+color:#10b981;
+}
+
+.timeline-item::before{
+content:'';
+position:absolute;
+left:112px;
+top:8px;
+width:20px;
+height:20px;
+border-radius:50%;
+background:#10b981;
+border:4px solid white;
+}
+
+.timeline-content{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(12px);
+
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.timeline-content h3{
+color:#10b981;
+margin-bottom:15px;
+}
+
+.timeline-content p{
+line-height:1.8;
+margin-bottom:10px;
+}
+
+/* SOCIAL */
+.social-links{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.social-links a{
+width:60px;
+height:60px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:white;
+color:#10b981;
+
+font-size:28px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+transition:.3s;
+}
+
+.social-links a:hover{
+transform:translateY(-5px);
+background:#10b981;
+color:white;
+}
+
+/* FOOTER */
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:42px;
+}
+
+.slider{
+width:300px;
+height:400px;
+}
+
+.timeline::before{
+left:20px;
+}
+
+.timeline-item{
+padding-left:60px;
+}
+
+.timeline-year{
+position:relative;
+width:auto;
+text-align:left;
+margin-bottom:10px;
+}
+
+.timeline-item::before{
+left:12px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">
+    <img
+        src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/header.png"
+        alt="Fikri Apriandi Logo">
+</div>
+
+<nav>
+<button class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</button>
+<ul>
+<li>
+<a href="#home">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+</li>
+<li>
+    <a href="#about">
+        <i class="fa-solid fa-user"></i>
+        About
+    </a>
+</li>
+
+<li>
+    <a href="#education">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Education
+    </a>
+</li>
+
+<li>
+    <a href="#experience">
+        <i class="fa-solid fa-briefcase"></i>
+        Experience
+    </a>
+</li>
+
+<li>
+    <a href="#skills">
+        <i class="fa-solid fa-chart-simple"></i>
+        Skills
+    </a>
+</li>
+
+<li>
+    <a href="#history">
+        <i class="fa-solid fa-book-open"></i>
+        History
+    </a>
+</li>
+
+<li>
+    <a href="#social">
+        <i class="fa-solid fa-share-nodes"></i>
+        Social
+    </a>
+</li><li>
+<a href="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/Moch_Fikri_Apriandi_CV.pdf"
+   class="nav-cv"
+   target="_blank">
+   <i class="fa-solid fa-download"></i>
+   CV
+</a>
+</li>
+
+<button id="theme-toggle">
+    🌙
+</button>
+
+</ul>
+</nav>
+</header>
+
+<section id="home" class="hero">
+
+<div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="hero-content">
+<h3>Hey There 👋</h3>
+
+<h1>
+My Name is <br>
+<span>Moch Fikri Apriandi</span>
+</h1>
+
+<h2 class="typing-text">
+    I am a <span id="typing"></span>
+</h2>
+
+<p>
+I am an Industrial Engineer with nearly 2 years of experience.
+Passionate about continuous learning and self-improvement,
+I am always seeking new knowledge, challenges, and opportunities.
+I believe that growth comes from taking initiative, embracing change,
+and making the most of every opportunity.
+</p>
+
+<a href="#about" class="btn">About Me</a>
+<a href="#social" class="btn-outline">Contact Me</a>
+</div>
+
+<div class="slider">
+<img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile1.jpg" class="slide active">
+<img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile2.jpg" class="slide">
+<img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile3.jpg" class="slide">
+</div>
+
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="content-box">
+<p>
+Enthusiastic and detail-oriented Industrial Engineer with hands-on 
+experience in manufacturing optimization, quality control, and lean practices. 
+Passionate about improving processes, balancing efficiency with practicality, 
+and solving real-world problems with smart, data-driven solutions. Skilled in 
+time study, line balancing, and cross-functional teamwork, with a solid 
+understanding of both the technical and human sides of production.
+</p>
+</div>
+
+</section>
+
+<section id="education">
+
+    <div class="education-container">
+
+        <h2 class="section-title">Education Journey</h2>
+
+        <div class="education-timeline">
+
+        <div class="edu-item">
+            <div class="edu-dot"></div>
+
+            <div class="edu-card">
+                <span class="edu-date">2013 - 2015</span>
+
+                <h3>Senior High School 1 Cibadak</h3>
+
+                <h4>Science Major</h4>
+
+                <p>
+                    Built strong foundations in mathematics,
+                    science, analytical thinking, leadership,
+                    and extracurricular activities.
+                </p>
+            </div>
+        </div>
+
+        <div class="edu-item">
+            <div class="edu-dot"></div>
+
+            <div class="edu-card">
+                <span class="edu-date">2015 - 2016</span>
+
+                <h3>Computer University</h3>
+
+                <h4>Non-Degree Program in Industrial Engineering</h4>
+
+                <p>
+                    Studied fundamental concepts of industrial engineering,
+                    production systems, process optimization,
+                    and manufacturing operations.
+                </p>
+            </div>
+        </div>
+
+        <div class="edu-item">
+            <div class="edu-dot"></div>
+
+            <div class="edu-card">
+                <span class="edu-date">2016 - 2023</span>
+
+                <h3>IPB University</h3>
+
+                <h4>
+                    Bachelor's Degree in Economics of Natural Resources
+                    and the Environment
+                </h4>
+
+                <p>
+                    Developed analytical thinking, economic evaluation,
+                    environmental resource management knowledge,
+                    and problem-solving capabilities.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">Professional Experience</h2>
+
+<div class="experience-grid">
+
+    <div class="experience-card">
+
+        <h3>Insdustrial Engineering - PT. Glostar Indonesia</h3>
+
+        <span>2024 - Present</span>
+
+        <ul>
+            <li>Analyzed and calculated cycle time within the shoe manufacturing process to 
+identify efficiency opportunities.</li>
+            <li>Determined optimal manpower allocation and established standard output 
+targets for production lines.</li>
+            <li>Identified and implemented Kaizen initiatives to improve workflow efficiency and 
+reduce waste.</li>
+            <li>Conducted analysis on new product models to estimate required manpower and 
+machinery capacity.</li>
+            <li>Developed and regularly updated line balancing plans to support production 
+efficiency and lean assessment initiatives.</li>
+        </ul>
+
+    </div>
+
+    <div class="experience-card">
+
+        <h3>Human Resource Staff - CV. Almughni Distribusi</h3>
+
+        <span>2020 - 2023</span>
+
+        <ul>
+            <li>Manage overall Human Resource operations, including strategic planning and 
+policy implementation.</li>
+            <li>Conduct end-to-end recruitment and onboarding processes to ensure 
+effective employee integration. </li>
+            <li>Administer employee benefits and compensation programs to maintain 
+satisfaction and compliance.</li>
+            
+        </ul>
+
+    </div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Professional Skills</h2>
+
+<div class="skills-container">
+
+    <div class="skill">
+        <span>HR Administration</span>
+        <div class="progress">
+            <div class="progress-bar" style="width:90%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Recruitment</span>
+        <div class="progress">
+            <div class="progress-bar" style="width:85%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Communication</span>
+        <div class="progress">
+            <div class="progress-bar" style="width:95%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Microsoft Office</span>
+        <div class="progress">
+            <div class="progress-bar" style="width:90%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>AutoCAD</span>
+        <div class="progress">
+            <div class="progress-bar" style="width:80%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Photoshop & CorelDRAW</span>
+        <div class="progress">
+            <div class="progress-bar" style="width:80%"></div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<section id="history">
+<h2 class="section-title">History of Me</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-year">2005</div>
+<div class="timeline-content">
+<h3>Early Life</h3>
+<p>I was born and raised in Sukabumi Regency, the largest regency in West Java, Indonesia. Coming from a humble family, I grew up in an environment where community and relationships played an important role in everyday life.
+
+Being naturally extroverted, I found it easy to adapt to new environments and connect with people from all walks of life.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2012</div>
+<div class="timeline-content">
+<h3>Discovering Curiosity</h3>
+<p>During my junior high school years, I developed interests in many different activities, ranging from sports to music. I was fascinated by learning new things and often jumped from one hobby to another.
+
+This phase taught me an important lesson: growth often begins with the willingness to try something unfamiliar.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2015</div>
+<div class="timeline-content">
+<h3>The Scouting Journey</h3>
+<p>During high school, I joined Scouting after being invited on a hiking trip by a friend. What started as a simple adventure became one of the most influential chapters of my life.
+
+Scouting taught me leadership, teamwork, discipline, resilience, and the courage to step outside my comfort zone.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2015</div>
+<div class="timeline-content">
+<h3>Learning the Art of Communication</h3>
+<p>As part of the Fundraising Team for NGLS, one of the largest outdoor events in West Java, I learned how to approach companies, secure sponsorships, and build valuable partnerships.
+
+This experience taught me that successful communication is not about asking for something, but about creating value for everyone involved.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2015</div>
+<div class="timeline-content">
+<h3>The Entrepreneurial Years</h3>
+<p>After entering university, I discovered a passion for business and entrepreneurship. I explored ventures ranging from online game item trading and event merchandise to food distribution.
+
+These experiences became my real-world business classroom and strengthened my skills in negotiation, sales, and relationship building.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">2024</div>
+<div class="timeline-content">
+<h3>Lessons Beyond the Classroom</h3>
+<p>My entrepreneurial journey required significant time and energy, causing my academic journey to take longer than expected.
+
+However, the lessons learned outside the classroom taught me resilience, adaptability, responsibility, financial independence, and persistence.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-year">Present</div>
+<div class="timeline-content">
+<h3>Looking Forward</h3>
+<p>Today, as an Industrial Engineer, I continue to carry lessons from every phase of my life. From leadership and communication to entrepreneurship and continuous learning, each experience has shaped who I am today.
+
+Every challenge is an opportunity to grow, every conversation is a chance to learn, and every experience is another step forward in my journey.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="social">
+<h2 class="section-title">Social Media</h2>
+
+<div class="content-box">
+<div class="social-links">
+
+<a href="https://wa.me/6282112053971" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="https://linkedin.com/in/mochfikriapriandi" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="https://instagram.com/fikriapriandi" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://github.com/fikriapriandi-ai" target="_blank">
+    <i class="fa-brands fa-github"></i>
+</a>
+
+<a href="mailto:fikri.apriandi@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Moch Fikri Apriandi. All Rights Reserved.
+</footer>
+
+<script>
+const slides=document.querySelectorAll('.slide');
+let current=0;
+
+setInterval(()=>{
+slides[current].classList.remove('active');
+current=(current+1)%slides.length;
+slides[current].classList.add('active');
+},3000);
+</script>
+
+<script>
+
+const toggle = document.getElementById("theme-toggle");
+
+toggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        toggle.innerHTML = "☀️";
+    }else{
+        toggle.innerHTML = "🌙";
+    }
+
+});
+
+<script>
+
+const menuBtn = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+</script>
+
+</body>
+
+<script>
+
+const words = [
+    "Industrial Engineer",
+    "Lean Practitioner",
+    "Problem Solver",
+    "Entrepreneur",
+    "Continuous Learner"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typingElement = document.getElementById("typing");
+
+function typeEffect(){
+
+    const currentWord = words[wordIndex];
+
+    if(!isDeleting){
+        typingElement.textContent =
+            currentWord.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if(charIndex === currentWord.length){
+            isDeleting = true;
+            setTimeout(typeEffect,1500);
+            return;
+        }
+
+    }else{
+
+        typingElement.textContent =
+            currentWord.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if(charIndex === 0){
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
+
+</script>
+</html>
