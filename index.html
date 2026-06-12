@@ -511,7 +511,8 @@ color:#10b981;
 nav{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:15px;
+    position:relative;
 }    
     
 /* HOME */
@@ -793,8 +794,9 @@ nav ul.active{
 .hero{
     flex-direction:column-reverse;
     text-align:center;
-    gap:20px;
-    padding-top:100px;
+    gap:15px;
+    padding:90px 20px 30px;
+    min-height:auto;
 }
 
 .hero-content h1{
@@ -808,8 +810,8 @@ nav ul.active{
 }
 
 .slider{
-    width:220px;
-    height:280px;
+    width:180px;
+    height:240px;
 }
 
 .education-timeline{
@@ -818,6 +820,26 @@ nav ul.active{
 
 .education-timeline::before{
     display:none;
+.timeline::before{
+    left:20px;
+}
+
+.timeline-item{
+    padding-left:60px;
+}
+
+.timeline-year{
+    position:relative;
+    left:auto;
+    width:auto;
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.timeline-item::before{
+    left:12px;
+}
+    
 }
 
 .experience-grid{
