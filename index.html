@@ -534,6 +534,7 @@ transparent 40%
 
 .hero-content{
 flex:1;
+max-width:700px;
 }
 
 .hero-content h3{
@@ -810,8 +811,9 @@ nav ul.active{
 }
 
 .slider{
-    width:180px;
-    height:240px;
+    width:220px;
+    height:280px;
+    margin:0 auto;
 }
 
 .education-timeline{
@@ -850,6 +852,41 @@ nav ul.active{
     font-size:30px;
 }
 
+.timeline::before{
+    left:15px;
+}
+
+.timeline-item{
+    padding-left:45px;
+    margin-bottom:25px;
+}
+
+.timeline-year{
+    position:relative;
+    left:auto;
+    width:auto;
+    text-align:left;
+    margin-bottom:8px;
+    font-size:16px;
+}
+
+.timeline-item::before{
+    left:7px;
+}
+
+.timeline-content{
+    padding:18px;
+}
+
+.timeline-content h3{
+    font-size:18px;
+}
+
+.timeline-content p{
+    font-size:14px;
+    line-height:1.6;
+}    
+    
 }
     
 </style>
