@@ -1,1446 +1,1287 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Moch Fikri Apriandi | Industrial Engineer Portfolio</title>
-
-<meta name="description"
-content="Moch Fikri Apriandi is an Industrial Engineer with experience in Lean Manufacturing, Line Balancing, Process Improvement, HR Administration, Recruitment, and Continuous Improvement.">
-
-<meta name="keywords"
-content="Moch Fikri Apriandi, Industrial Engineer, Lean Manufacturing, Line Balancing, Process Improvement, HR Administration, Recruitment, Portfolio">
-
-<meta name="author"
-content="Moch Fikri Apriandi">
-
-<meta name="robots"
-content="index, follow">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<meta property="og:title"
-content="Moch Fikri Apriandi | Industrial Engineer Portfolio">
-
-<meta property="og:description"
-content="Industrial Engineer passionate about process improvement, lean manufacturing, and continuous learning.">
-
-<meta property="og:image"
-content="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile1.jpg">
-
-<meta property="og:url"
-content="https://fikriapriandi-ai.github.io/portfolio/">
-
-<meta property="og:type"
-content="website">
-
-<link rel="icon"
-href="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/header.png">
-
-<link rel="canonical"
-href="https://fikriapriandi-ai.github.io/portfolio/">
+<meta name="description" content="Moch Fikri Apriandi is an Industrial Engineer with experience in Lean Manufacturing, Line Balancing, Process Improvement, HR Administration, Recruitment, and Continuous Improvement.">
+<meta name="keywords" content="Moch Fikri Apriandi, Industrial Engineer, Lean Manufacturing, Line Balancing, Process Improvement, HR Administration, Recruitment, Portfolio">
+<meta name="author" content="Moch Fikri Apriandi">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Moch Fikri Apriandi | Industrial Engineer Portfolio">
+<meta property="og:description" content="Industrial Engineer passionate about process improvement, lean manufacturing, and continuous learning.">
+<meta property="og:image" content="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile1.jpg">
+<meta property="og:url" content="https://fikriapriandi-ai.github.io/portfolio/">
+<meta property="og:type" content="website">
+<link rel="icon" href="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/header.png">
+<link rel="canonical" href="https://fikriapriandi-ai.github.io/portfolio/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-
-.menu-toggle{
-    display:none;
-    background:none;
-    border:none;
-    font-size:28px;
-    color:#10b981;
-    cursor:pointer;
-}
-
-/* PARTICLES */
-
-.hero{
-    position:relative;
-    overflow:hidden;
-}
-
-.particles{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    pointer-events:none;
-}
-
-.particles span{
-    position:absolute;
-    display:block;
-    border-radius:50%;
-    background:rgba(16,185,129,.25);
-    animation:floatParticle linear infinite;
-}
-
-/* posisi masing-masing particle */
-
-.particles span:nth-child(1){
-    width:15px;
-    height:15px;
-    left:10%;
-    animation-duration:18s;
-}
-
-.particles span:nth-child(2){
-    width:25px;
-    height:25px;
-    left:25%;
-    animation-duration:22s;
-}
-
-.particles span:nth-child(3){
-    width:10px;
-    height:10px;
-    left:40%;
-    animation-duration:16s;
-}
-
-.particles span:nth-child(4){
-    width:30px;
-    height:30px;
-    left:55%;
-    animation-duration:24s;
-}
-
-.particles span:nth-child(5){
-    width:18px;
-    height:18px;
-    left:70%;
-    animation-duration:20s;
-}
-
-.particles span:nth-child(6){
-    width:12px;
-    height:12px;
-    left:80%;
-    animation-duration:17s;
-}
-
-.particles span:nth-child(7){
-    width:20px;
-    height:20px;
-    left:90%;
-    animation-duration:21s;
-}
-
-.particles span:nth-child(8){
-    width:14px;
-    height:14px;
-    left:60%;
-    animation-duration:19s;
-}
-
-@keyframes floatParticle{
-
-    0%{
-        transform:translateY(100vh);
-        opacity:0;
-    }
-
-    10%{
-        opacity:1;
-    }
-
-    90%{
-        opacity:1;
-    }
-
-    100%{
-        transform:translateY(-120px);
-        opacity:0;
-    }
-
-}
-
-/* OCEAN BACKGROUND */
-
-body{
-    position:relative;
-    overflow-x:hidden;
-}
-
-body::before,
-body::after{
-    content:'';
-    position:fixed;
-    border-radius:50%;
-    z-index:-1;
-    filter:blur(80px);
-    animation:floatOcean 20s ease-in-out infinite;
-}
-
-body::before{
-    width:500px;
-    height:500px;
-    background:rgba(59,130,246,0.15);
-    top:-100px;
-    left:-100px;
-}
-
-body::after{
-    width:600px;
-    height:600px;
-    background:rgba(16,185,129,0.15);
-    bottom:-200px;
-    right:-150px;
-    animation-delay:10s;
-}
-
-@keyframes floatOcean{
-
-    0%{
-        transform:translate(0,0);
-    }
-
-    25%{
-        transform:translate(50px,-30px);
-    }
-
-    50%{
-        transform:translate(0,50px);
-    }
-
-    75%{
-        transform:translate(-50px,-20px);
-    }
-
-    100%{
-        transform:translate(0,0);
-    }
-
-}
-
-.nav-cv{
-    background:#10b981;
-    color:white !important;
-    padding:10px 18px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-
-.nav-cv:hover{
-    background:#059669;
-    transform:translateY(-2px);
-}
-
-.nav-cv i{
-    margin-right:6px;
-}
-
-#education{
-    padding-top:100px;
-}
-
-#education .section-title{
-    margin-left:0;
-    text-align:left;
-}
-
-.education-title{
-    margin-left:0;
-    padding-left:0;
-}
-
-/* EDUCATION TIMELINE */
-
-.education-timeline{
-    position:relative;
-    display:flex;
-    justify-content:space-between;
-    gap:30px;
-    margin-top:60px;
-
-    width:100%;
-}
-
-.education-timeline::before{
-    content:'';
-    position:absolute;
-    top:25px;
-    left:10%;
-    width:80%;
-    height:4px;
-    background:#10b981;
-    z-index:1;
-}
-
-.edu-item{
-    flex:1;
-    position:relative;
-    text-align:center;
-    z-index:2;
-}
-
-.edu-dot{
-    width:24px;
-    height:24px;
-    background:#10b981;
-    border-radius:50%;
-    margin:0 auto 25px;
-    border:5px solid white;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
-}
-
-.edu-card{
-background:rgba(255,255,255,.75);
-backdrop-filter:blur(12px);
-
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-min-height:280px;
-}
-
-.edu-date{
-    display:inline-block;
-    background:#d1fae5;
-    color:#047857;
-    padding:8px 15px;
-    border-radius:20px;
-    font-weight:600;
-    margin-bottom:15px;
-}
-
-.edu-card h3{
-    color:#10b981;
-    margin-bottom:10px;
-}
-
-.edu-card h4{
-    font-size:15px;
-    min-height:60px;
-    margin-bottom:15px;
-}
-
-.edu-card p{
-    line-height:1.7;
-    color:#555;
-}
-
-/* DARK MODE */
-
-body.dark .edu-card{
-    background:#1f2937;
-}
-
-body.dark .edu-card p,
-body.dark .edu-card h4{
-    color:#d1d5db;
-}
-
-/* DARK MODE */
-
-body.dark .education-card{
-background:#1f2937;
-color:#e5e7eb;
-}
-
-body.dark .education-card h4{
-color:#d1d5db;
-}
-
-body.dark .edu-year{
-background:#065f46;
-color:#d1fae5;
-}
-
-#theme-toggle{
-    border:none;
-    background:#10b981;
-    color:white;
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    cursor:pointer;
-    font-size:18px;
-    transition:.3s;
-    position:relative;
-    overflow:visible;
-
-}
-
-#theme-toggle:hover{
-    transform:scale(1.1);
-}
-
-/* DARK MODE */
-
-body.dark{
-    background:#0f172a;
-    color:#e5e7eb;
-}
-
-body.dark header{
-    background:#111827;
-}
-
-body.dark nav a{
-    color:#e5e7eb;
-}
-
-body.dark .content-box,
-body.dark .timeline-content,
-body.dark .experience-card{
-    background:#1f2937;
-    color:#e5e7eb;
-}
-
-body.dark .hero-content p,
-body.dark .timeline-content p{
-    color:#d1d5db;
-}
-
-body.dark .logo,
-body.dark .section-title,
-body.dark .timeline-year,
-body.dark .experience-card h3{
-    color:#34d399;
-}
-
-body.dark footer{
-    background:#020617;
-}
-
-/* EXPERIENCE */
-
-.experience-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:25px;
-}
-
-.experience-card{
-background:rgba(255,255,255,.75);
-backdrop-filter:blur(12px);
-
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.experience-card:hover{
-transform:translateY(-5px);
-}
-
-.experience-card h3{
-color:#10b981;
-margin-bottom:10px;
-}
-
-.experience-card span{
-font-weight:bold;
-color:#666;
-display:block;
-margin-bottom:15px;
-}
-
-.experience-card ul{
-padding-left:20px;
-line-height:1.8;
-}
-
-/* SKILLS */
-
-.skills-container{
-max-width:900px;
-margin:auto;
-}
-
-.skill{
-margin-bottom:25px;
-}
-
-.skill span{
-display:block;
-margin-bottom:8px;
-font-weight:600;
-}
-
-.progress{
-height:14px;
-background:#d1fae5;
-border-radius:50px;
-overflow:hidden;
-}
-
-.progress-bar{
-height:100%;
-background:#10b981;
-border-radius:50px;
-}
-
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
-html{scroll-behavior:smooth;}
-body{
-background:
-linear-gradient(
-180deg,
-#ecfeff 0%,
-#cffafe 25%,
-#d1fae5 60%,
-#a7f3d0 100%
-);
-color:#333;
-}
-/* HEADER */
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:90px;
-
-background:rgba(255,255,255,.9);
-backdrop-filter:blur(10px);
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:0 5%;
-
-box-shadow:0 2px 10px rgba(0,0,0,.08);
-z-index:1000;
-}
-
-.logo img{
-height:220px;
-width:auto;
-display:block;
-object-fit:contain;
-}
-
-nav ul{
-display:flex;
-align-items:center;
-list-style:none;
-gap:18px;
-}
-
-nav a{
-display:flex;
-align-items:center;
-gap:6px;
-
-text-decoration:none;
-color:#333;
-font-weight:600;
-
-transition:.3s;
-}
-
-nav a:hover{
-color:#10b981;
-}
-
-nav{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    position:relative;
-}    
-    
-/* HOME */
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:60px;
-padding:120px 8% 80px;
-
-background:
-radial-gradient(
-circle at top right,
-rgba(16,185,129,.25),
-transparent 40%
-);
-}
-
-.hero-content{
-flex:1;
-max-width:700px;
-}
-
-.hero-content h3{
-color:#10b981;
-font-size:24px;
-margin-bottom:10px;
-}
-
-.hero-content h1{
-    font-size:60px;
-    line-height:1.2;
-    margin-bottom:20px;
-}
-
-.typing-text{
-    font-size:20px;
-    margin-bottom:20px;
-    color:#374151;
-}
-
-.typing-text span{
-    color:#10b981;
-    font-weight:700;
-    border-right:3px solid #10b981;
-    padding-right:5px;
-}
-
-.hero-content span{
-color:#10b981;
-}
-
-.hero-content p{
-font-size:18px;
-line-height:1.8;
-color:#555;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-background:#10b981;
-color:white;
-padding:14px 28px;
-border-radius:8px;
-text-decoration:none;
-margin-right:10px;
-}
-
-.btn-outline{
-display:inline-block;
-border:2px solid #10b981;
-color:#10b981;
-padding:12px 28px;
-border-radius:8px;
-text-decoration:none;
-}
-
-.slider{
-width:380px;
-height:500px;
-position:relative;
-}
-
-.slide{
-position:absolute;
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-object-fit:cover;
-object-position:center;
-
-border-radius:20px;
-
-opacity:0;
-transition:1s;
-
-box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-.slide.active{
-opacity:1;
-}
-
-/* SECTION */
-section{
-padding:30px 8%;
-}
-
-.section-title{
-font-size:40px;
-color:#10b981;
-margin-bottom:30px;
-}
-
-#about .section-title,
-#education .section-title,
-#experience .section-title,
-#skills .section-title,
-#history .section-title,
-#social .section-title{
-    text-align:left;
-}
-
-.content-box{
-background:rgba(255,255,255,.75);
-backdrop-filter:blur(12px);
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
-}
-
-/* TIMELINE */
-.timeline{
-position:relative;
-max-width:1000px;
-margin:auto;
-}
-
-.timeline::before{
-content:'';
-position:absolute;
-left:120px;
-top:0;
-width:4px;
-height:100%;
-background:#10b981;
-}
-
-.timeline-item{
-position:relative;
-padding-left:180px;
-margin-bottom:50px;
-}
-
-.timeline-year{
-position:absolute;
-left:0;
-width:90px;
-text-align:right;
-font-size:20px;
-font-weight:700;
-color:#10b981;
-}
-
-.timeline-item::before{
-content:'';
-position:absolute;
-left:112px;
-top:8px;
-width:20px;
-height:20px;
-border-radius:50%;
-background:#10b981;
-border:4px solid white;
-}
-
-.timeline-content{
-background:rgba(255,255,255,.75);
-backdrop-filter:blur(12px);
-
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-.timeline-content h3{
-color:#10b981;
-margin-bottom:15px;
-}
-
-.timeline-content p{
-line-height:1.8;
-margin-bottom:10px;
-}
-
-/* SOCIAL */
-.social-links{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.social-links a{
-width:60px;
-height:60px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-background:white;
-color:#10b981;
-
-font-size:28px;
-
-border-radius:50%;
-
-text-decoration:none;
-
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-transition:.3s;
-}
-
-.social-links a:hover{
-transform:translateY(-5px);
-background:#10b981;
-color:white;
-}
-
-/* FOOTER */
-footer{
-background:#111827;
-color:white;
-text-align:center;
-padding:25px;
-
-} 
-
-/* MOBILE RESPONSIVE */
-
-@media(max-width:900px){
-
-header{
-    height:80px;
-    padding:0 15px;
-}
-
-.logo img{
-    height:60px;
-}
-
-.menu-toggle{
-    display:block;
-}
-
-nav ul{
-    display:none;
-}
-
-nav ul.active{
-    display:flex;
-    flex-direction:column;
-
-    position:absolute;
-    top:70px;
-    right:0;
-
-    width:250px;
-
-    background:white;
-
-    padding:20px;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-
-    z-index:9999;
-}
-
-.hero{
-    display:flex;
-    flex-direction:column-reverse;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    gap:20px;
-    padding:100px 20px 40px;
-    min-height:auto;
-}
-
-.hero-content{
-    width:100%;
-    margin:0 auto;
-}   
-
-.hero-content h1{
-    font-size:24px;
-    line-height:1.2;
-}
-
-.hero-content p{
-    font-size:14px;
-    line-height:1.6;
-}
-
-.slider{
-    width:220px;
-    height:280px;
-
-    position:relative;
-
-    margin:20px auto;
-
-    flex-shrink:0;
-}
-
-.education-timeline{
-    flex-direction:column;
-}
-
-.education-timeline::before{
-    display:none;
-}
-    
-.experience-grid{
-    grid-template-columns:1fr;
-}
-
-.section-title{
-    font-size:30px;
-}
-
-.timeline::before{
-    left:15px;
-}
-
-.timeline-item{
-    padding-left:45px;
-    margin-bottom:25px;
-}
-
-.timeline-year{
-    position:relative;
-    left:auto;
-    width:auto;
-    text-align:left;
-    margin-bottom:8px;
-    font-size:16px;
-}
-
-.timeline-item::before{
-    left:7px;
-}
-
-.timeline-content{
-    padding:18px;
-}
-
-.timeline-content h3{
-    font-size:18px;
-}
-
-.timeline-content p{
-    font-size:14px;
-    line-height:1.6;
-}    
-    
-}
-    
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --blue: #1B3A6B;
+  --blue-dark: #0F2447;
+  --blue-light: #EEF3FB;
+  --blue-mid: #C8D8F0;
+  --accent: #E8530A;
+  --accent-light: #FEF0E8;
+  --text: #0F1C2E;
+  --text-mid: #4A5568;
+  --text-light: #8896A8;
+  --bg: #F7F9FC;
+  --white: #ffffff;
+  --border: rgba(27,58,107,0.12);
+  --radius: 14px;
+  --radius-sm: 8px;
+}
+
+body.dark {
+  --blue: #5B8DD9;
+  --blue-dark: #3A6BB5;
+  --blue-light: #1A2540;
+  --blue-mid: #243050;
+  --accent: #FF7A3D;
+  --accent-light: #2A1A10;
+  --text: #E8EEF8;
+  --text-mid: #A0AEBF;
+  --text-light: #6A7D96;
+  --bg: #0D1520;
+  --white: #141E2E;
+  --border: rgba(91,141,217,0.18);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  height: 64px;
+  background: rgba(247,249,252,0.93);
+  backdrop-filter: blur(14px);
+  border-bottom: 0.5px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 6%;
+  transition: background 0.3s;
+}
+body.dark header { background: rgba(13,21,32,0.93); }
+
+.logo img { height: 42px; width: auto; object-fit: contain; display: block; }
+
+nav { display: flex; align-items: center; gap: 10px; position: relative; }
+nav ul { display: flex; align-items: center; gap: 4px; list-style: none; }
+nav a {
+  text-decoration: none; color: var(--text-mid);
+  font-size: 13px; font-weight: 500;
+  padding: 6px 10px; border-radius: 6px;
+  transition: all 0.2s;
+  display: flex; align-items: center; gap: 5px;
+}
+nav a:hover { color: var(--blue); background: var(--blue-light); }
+nav a i { font-size: 12px; }
+.nav-cv {
+  background: var(--accent) !important; color: white !important;
+  padding: 8px 16px !important; border-radius: 8px !important; font-weight: 600 !important;
+}
+.nav-cv:hover { opacity: 0.9 !important; background: var(--accent) !important; }
+
+#theme-toggle {
+  background: var(--blue-light); border: none; cursor: pointer;
+  width: 38px; height: 38px; border-radius: 8px; font-size: 16px;
+  transition: all 0.2s; display: flex; align-items: center; justify-content: center;
+}
+#theme-toggle:hover { background: var(--blue-mid); }
+
+.menu-toggle { display: none; background: none; border: none; font-size: 22px; color: var(--blue); cursor: pointer; }
+
+#home {
+  min-height: 100vh;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 60px; padding: 100px 6% 60px; position: relative; overflow: hidden;
+  max-width: 1100px; margin: 0 auto;
+}
+#home::before {
+  content: ''; position: absolute;
+  width: 600px; height: 600px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(27,58,107,0.07) 0%, transparent 70%);
+  top: -100px; right: -100px; pointer-events: none;
+}
+
+.hero-content { flex: 1; max-width: 640px; }
+
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--blue-light); border: 1px solid var(--blue-mid);
+  border-radius: 100px; padding: 6px 14px;
+  font-size: 12px; font-weight: 600; color: var(--blue);
+  letter-spacing: 0.4px; margin-bottom: 1.25rem;
+}
+.hero-eyebrow::before {
+  content: ''; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent); display: inline-block;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.75); }
+}
+
+.hero-content h3 { font-size: 18px; color: var(--text-mid); margin-bottom: 10px; }
+.hero-content h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 700; line-height: 1.08; letter-spacing: -1.5px;
+  color: var(--text); margin-bottom: 12px;
+}
+.hero-content h1 em { font-style: normal; color: var(--accent); }
+.typing-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: var(--blue); font-weight: 500; margin-bottom: 1.25rem; min-height: 2rem;
+}
+.typing-text span { border-right: 2px solid var(--blue); padding-right: 3px; }
+.hero-content p {
+  font-size: 1rem; color: var(--text-mid); line-height: 1.8;
+  margin-bottom: 2rem; max-width: 520px;
+}
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 3rem; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--blue); color: white;
+  padding: 12px 24px; border-radius: var(--radius-sm);
+  text-decoration: none; font-size: 14px; font-weight: 600; transition: all 0.2s;
+}
+.btn:hover { background: var(--blue-dark); transform: translateY(-2px); }
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1.5px solid var(--blue); color: var(--blue);
+  padding: 11px 24px; border-radius: var(--radius-sm);
+  text-decoration: none; font-size: 14px; font-weight: 600;
+  background: transparent; transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--blue-light); }
+
+.hero-stats { display: flex; gap: 2.5rem; padding-top: 2rem; border-top: 0.5px solid var(--border); }
+.stat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem; font-weight: 700; color: var(--blue); line-height: 1; letter-spacing: -1px;
+}
+.stat-num em { font-style: normal; color: var(--accent); }
+.stat-label { font-size: 11px; color: var(--text-light); margin-top: 4px; letter-spacing: 0.3px; }
+
+.hero-img { width: 340px; height: 440px; position: relative; flex-shrink: 0; }
+.slide {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: top center;
+  border-radius: 20px; opacity: 0; transition: opacity 1s;
+  box-shadow: 0 20px 50px rgba(27,58,107,0.18);
+}
+.slide.active { opacity: 1; }
+
+section { padding: 80px 6%; max-width: 1100px; margin: 0 auto; }
+
+.section-label {
+  font-size: 11px; font-weight: 700; color: var(--accent);
+  letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 8px;
+}
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 700; color: var(--text); letter-spacing: -0.8px;
+  line-height: 1.15; margin-bottom: 12px;
+}
+.section-sub {
+  font-size: 0.95rem; color: var(--text-mid); line-height: 1.8;
+  max-width: 500px; margin-bottom: 3rem;
+}
+.divider { height: 0.5px; background: var(--border); max-width: 1100px; margin: 0 auto; }
+
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.about-card {
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.about-card:hover { border-color: var(--blue); transform: translateY(-2px); }
+.about-icon {
+  width: 42px; height: 42px; background: var(--blue-light);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; margin-bottom: 1rem; color: var(--blue);
+}
+.about-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px; font-weight: 600; color: var(--text); margin-bottom: 6px;
+}
+.about-card p { font-size: 13.5px; color: var(--text-mid); line-height: 1.7; }
+
+.edu-timeline-h {
+  position: relative; display: flex; justify-content: space-between;
+  gap: 20px; margin-top: 40px;
+}
+.edu-timeline-h::before {
+  content: ''; position: absolute; top: 22px; left: 8%; width: 84%;
+  height: 3px; background: linear-gradient(90deg, var(--blue), var(--accent));
+  border-radius: 2px; z-index: 0;
+}
+.edu-item { flex: 1; position: relative; text-align: center; z-index: 1; }
+.edu-dot {
+  width: 22px; height: 22px; background: var(--blue); border-radius: 50%;
+  margin: 0 auto 24px; border: 4px solid var(--bg);
+  box-shadow: 0 0 0 3px var(--blue-mid);
+}
+.edu-card-h {
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: var(--radius); padding: 20px; min-height: 240px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.edu-card-h:hover { transform: translateY(-3px); border-color: var(--blue); }
+.edu-date {
+  display: inline-block; background: var(--blue-light); color: var(--blue);
+  padding: 5px 12px; border-radius: 100px;
+  font-size: 11px; font-weight: 700; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.edu-card-h h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px; font-weight: 700; color: var(--blue); margin-bottom: 6px;
+}
+.edu-card-h h4 { font-size: 12.5px; font-weight: 500; color: var(--text-mid); margin-bottom: 10px; min-height: 36px; }
+.edu-card-h p { font-size: 12px; color: var(--text-light); line-height: 1.6; }
+
+.exp-timeline { position: relative; }
+.exp-timeline::before {
+  content: ''; position: absolute; left: 14px; top: 8px; bottom: 0;
+  width: 2px; background: linear-gradient(to bottom, var(--blue), transparent);
+  border-radius: 2px;
+}
+.exp-item { padding-left: 50px; position: relative; margin-bottom: 2.5rem; }
+.exp-item::before {
+  content: ''; position: absolute; left: 6px; top: 5px;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--white); border: 2.5px solid var(--blue);
+  box-shadow: 0 0 0 4px var(--blue-light);
+}
+.exp-tag {
+  display: inline-flex; align-items: center;
+  background: var(--accent-light); color: var(--accent);
+  font-size: 11px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; padding: 4px 10px;
+  border-radius: 100px; margin-bottom: 6px;
+}
+.exp-company { font-size: 12px; color: var(--text-light); margin-bottom: 4px; font-weight: 500; }
+.exp-role {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 12px;
+}
+.exp-card {
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: var(--radius); padding: 1.25rem 1.5rem;
+  transition: border-color 0.2s;
+}
+.exp-card:hover { border-color: var(--blue); }
+.exp-bullets { list-style: none; }
+.exp-bullets li {
+  font-size: 13.5px; color: var(--text-mid); line-height: 1.75;
+  padding-left: 18px; position: relative; margin-bottom: 5px;
+}
+.exp-bullets li::before {
+  content: '→'; position: absolute; left: 0;
+  color: var(--accent); font-size: 11px; top: 3px;
+}
+
+.skills-wrap { display: flex; flex-direction: column; gap: 2.5rem; }
+.skill-group-label {
+  font-size: 12px; font-weight: 700; color: var(--blue);
+  letter-spacing: 1px; text-transform: uppercase;
+  margin-bottom: 1rem; padding-bottom: 8px; border-bottom: 2px solid var(--blue-mid);
+}
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.skill-card {
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: var(--radius-sm); padding: 1rem 1.25rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.skill-card:hover { border-color: var(--blue); transform: translateY(-2px); }
+.skill-name { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+.skill-bar-bg { background: var(--blue-light); border-radius: 100px; height: 5px; overflow: hidden; }
+.skill-bar {
+  height: 100%; border-radius: 100px;
+  background: linear-gradient(90deg, var(--blue), var(--accent));
+}
+.skill-cat { font-size: 10px; font-weight: 600; color: var(--text-light); letter-spacing: 0.8px; text-transform: uppercase; margin-top: 6px; }
+
+.timeline { position: relative; max-width: 800px; }
+.timeline::before {
+  content: ''; position: absolute; left: 108px; top: 0;
+  width: 2px; height: 100%;
+  background: linear-gradient(to bottom, var(--blue), transparent);
+}
+.timeline-item { position: relative; padding-left: 160px; margin-bottom: 2rem; }
+.timeline-year {
+  position: absolute; left: 0; width: 88px; text-align: right;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px; font-weight: 700; color: var(--accent); padding-top: 4px;
+}
+.timeline-item::before {
+  content: ''; position: absolute; left: 100px; top: 8px;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--white); border: 2.5px solid var(--blue);
+  box-shadow: 0 0 0 4px var(--blue-light);
+}
+.timeline-content {
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: var(--radius); padding: 1.25rem 1.5rem;
+}
+.timeline-content h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px; font-weight: 700; color: var(--blue); margin-bottom: 8px;
+}
+.timeline-content p { font-size: 13.5px; color: var(--text-mid); line-height: 1.75; }
+
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.contact-chip {
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem 1rem;
+  text-decoration: none; color: var(--text);
+  font-size: 13px; font-weight: 600; transition: all 0.2s;
+}
+.contact-chip:hover {
+  border-color: var(--blue); background: var(--blue-light);
+  color: var(--blue); transform: translateY(-3px);
+}
+.contact-chip i { font-size: 22px; color: var(--blue); }
+
+footer {
+  background: var(--blue-dark); color: rgba(255,255,255,0.65);
+  text-align: center; padding: 2rem 1rem; font-size: 13px;
+}
+footer strong { color: white; font-weight: 600; }
+
+@media (max-width: 900px) {
+  header { padding: 0 4%; }
+  .menu-toggle { display: block; }
+  nav ul {
+    display: none; flex-direction: column; align-items: flex-start;
+    position: absolute; top: 70px; right: 4%;
+    width: 240px; background: var(--white);
+    border: 0.5px solid var(--border); border-radius: var(--radius);
+    padding: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12); z-index: 9999;
+  }
+  nav ul.active { display: flex; }
+  nav ul li { width: 100%; }
+  nav a { padding: 10px 12px; }
+  #home { flex-direction: column-reverse; padding: 90px 5% 50px; gap: 30px; text-align: center; }
+  .hero-img { width: 260px; height: 320px; }
+  .hero-stats { justify-content: center; gap: 2rem; }
+  section { padding: 60px 5%; }
+  .about-grid { grid-template-columns: 1fr; }
+  .edu-timeline-h { flex-direction: column; }
+  .edu-timeline-h::before { display: none; }
+  .timeline::before { left: 14px; }
+  .timeline-item { padding-left: 50px; }
+  .timeline-year { position: relative; left: auto; width: auto; text-align: left; margin-bottom: 6px; font-size: 14px; }
+  .timeline-item::before { left: 6px; }
+}
+
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+.project-card {
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  display: flex; flex-direction: column;
+}
+.project-card:hover {
+  border-color: var(--blue); transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(27,58,107,0.1);
+}
+.project-thumb {
+  width: 100%; height: 160px;
+  background: linear-gradient(135deg, var(--blue-light) 0%, var(--blue-mid) 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 10px; color: var(--blue); position: relative; overflow: hidden;
+}
+.project-thumb::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, transparent 60%, rgba(27,58,107,0.08));
+}
+.project-thumb i { font-size: 2.8rem; opacity: 0.55; }
+.project-thumb-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: 0.6;
+}
+.project-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.project-tag {
+  background: var(--blue-light); color: var(--blue);
+  font-size: 10px; font-weight: 700; letter-spacing: 0.8px;
+  text-transform: uppercase; padding: 3px 9px; border-radius: 100px;
+}
+.project-tag.accent { background: var(--accent-light); color: var(--accent); }
+.project-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px; font-weight: 700; color: var(--text); line-height: 1.3;
+}
+.project-desc { font-size: 13px; color: var(--text-mid); line-height: 1.7; flex: 1; }
+.project-footer { display: flex; gap: 8px; margin-top: 8px; }
+.project-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  background: var(--blue); color: white;
+  padding: 9px 14px; border-radius: 7px;
+  text-decoration: none; font-size: 12px; font-weight: 600;
+  transition: all 0.2s; flex: 1;
+}
+.project-btn:hover { background: var(--blue-dark); }
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">
-    <img
-        src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/header.png"
-        alt="Fikri Apriandi Logo">
-</div>
-
-<nav>
-    
-<button class="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-</button>
-<ul>
-<li>
-<a href="#home">
-<i class="fa-solid fa-house"></i>
-Home
-</a>
-</li>
-<li>
-    <a href="#about">
-        <i class="fa-solid fa-user"></i>
-        About
-    </a>
-</li>
-
-<li>
-    <a href="#education">
-        <i class="fa-solid fa-graduation-cap"></i>
-        Education
-    </a>
-</li>
-
-<li>
-    <a href="#experience">
-        <i class="fa-solid fa-briefcase"></i>
-        Experience
-    </a>
-</li>
-
-<li>
-    <a href="#skills">
-        <i class="fa-solid fa-chart-simple"></i>
-        Skills
-    </a>
-</li>
-
-<li>
-    <a href="#history">
-        <i class="fa-solid fa-book-open"></i>
-        History
-    </a>
-</li>
-
-<li>
-    <a href="#social">
-        <i class="fa-solid fa-share-nodes"></i>
-        Social
-    </a>
-</li><li>
-<a href="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/Moch_Fikri_Apriandi_CV.pdf"
-   class="nav-cv"
-   target="_blank">
-   <i class="fa-solid fa-download"></i>
-   CV
-</a>
-</li>
-
-</ul>
-
-<button id="theme-toggle">
-    🌙
-</button>
-
-</nav>
+  <div class="logo">
+    <img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/header.png" alt="Fikri Apriandi Logo">
+  </div>
+  <nav>
+    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <ul>
+      <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+      <li><a href="#skills"><i class="fa-solid fa-chart-simple"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+      <li><a href="#history"><i class="fa-solid fa-book-open"></i> History</a></li>
+      <li><a href="#social"><i class="fa-solid fa-share-nodes"></i> Social</a></li>
+      <li>
+        <a href="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/Moch_Fikri_Apriandi_CV.pdf"
+           class="nav-cv" target="_blank">
+          <i class="fa-solid fa-download"></i> CV
+        </a>
+      </li>
+    </ul>
+    <button id="theme-toggle">🌙</button>
+  </nav>
 </header>
 
-<section id="home" class="hero">
-
-<div class="particles">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-
-<div class="hero-content">
-<h3>Hey There 👋</h3>
-
-<h1>
-My Name is <br>
-<span>Moch Fikri Apriandi</span>
-</h1>
-
-<h2 class="typing-text">
-    I am a <span id="typing"></span>
-</h2>
-
-<p>
-I am an Industrial Engineer with nearly 2 years of experience.
-Passionate about continuous learning and self-improvement,
-I am always seeking new knowledge, challenges, and opportunities.
-I believe that growth comes from taking initiative, embracing change,
-and making the most of every opportunity.
-</p>
-
-<a href="#about" class="btn">About Me</a>
-<a href="#social" class="btn-outline">Contact Me</a>
-</div>
-
-<div class="slider">
-<img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile1.jpg" class="slide active">
-<img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile2.jpg" class="slide">
-<img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile3.jpg" class="slide">
-</div>
-
+<!-- HOME -->
+<section id="home">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Industrial Engineer · Open to Opportunities</div>
+    <h3>Hey There 👋</h3>
+    <h1>Moch <em>Fikri</em><br>Apriandi</h1>
+    <h2 class="typing-text">I am a <span id="typing"></span></h2>
+    <p>Industrial Engineer with nearly 2 years of hands-on experience in manufacturing optimization, line balancing, and Kaizen implementation. Passionate about making production smarter through data-driven solutions.</p>
+    <div class="hero-btns">
+      <a href="#experience" class="btn">View Experience <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#social" class="btn-outline">Contact Me</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num" id="stat-years">2<em>+</em></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-num" id="stat-kaizen">0<em>+</em></div>
+        <div class="stat-label">Kaizen Initiatives</div>
+      </div>
+      <div>
+        <div class="stat-num">IE</div>
+        <div class="stat-label">Lean Manufacturing</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile1.jpg" class="slide active" alt="Fikri Apriandi">
+    <img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile2.jpg" class="slide" alt="Fikri Apriandi">
+    <img src="https://raw.githubusercontent.com/fikriapriandi-ai/portfolio/main/profile3.jpg" class="slide" alt="Fikri Apriandi">
+  </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- ABOUT -->
 <section id="about">
-<h2 class="section-title">About Me</h2>
-
-<div class="content-box">
-<p>
-Enthusiastic and detail-oriented Industrial Engineer with hands-on 
-experience in manufacturing optimization, quality control, and lean practices. 
-Passionate about improving processes, balancing efficiency with practicality, 
-and solving real-world problems with smart, data-driven solutions. Skilled in 
-time study, line balancing, and cross-functional teamwork, with a solid 
-understanding of both the technical and human sides of production.
-</p>
-</div>
-
+  <div class="section-label">About</div>
+  <h2 class="section-title">Who I Am</h2>
+  <p class="section-sub">Enthusiastic and detail-oriented Industrial Engineer passionate about improving processes and solving real-world problems with data-driven solutions.</p>
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-icon"><i class="fa-solid fa-gears"></i></div>
+      <h3>Process Optimization</h3>
+      <p>Cycle time analysis, line balancing, and waste identification to measurably improve production efficiency.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-icon"><i class="fa-solid fa-chart-line"></i></div>
+      <h3>Data-Driven Decisions</h3>
+      <p>From manpower allocation to capacity planning, every decision backed by structured data analysis.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+      <h3>Continuous Improvement</h3>
+      <p>Hands-on Kaizen implementation and lean assessment to drive sustainable workflow improvements.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-icon"><i class="fa-solid fa-people-group"></i></div>
+      <h3>Cross-Functional Teamwork</h3>
+      <p>Experience across production and HR departments, bridging technical and people-oriented challenges.</p>
+    </div>
+  </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- EDUCATION -->
 <section id="education">
-
-    <div class="education-container">
-
-        <h2 class="section-title">Education Journey</h2>
-
-        <div class="education-timeline">
-
-        <div class="edu-item">
-            <div class="edu-dot"></div>
-
-            <div class="edu-card">
-                <span class="edu-date">2013 - 2015</span>
-
-                <h3>Senior High School 1 Cibadak</h3>
-
-                <h4>Science Major</h4>
-
-                <p>
-                    Built strong foundations in mathematics,
-                    science, analytical thinking, leadership,
-                    and extracurricular activities.
-                </p>
-            </div>
-        </div>
-
-        <div class="edu-item">
-            <div class="edu-dot"></div>
-
-            <div class="edu-card">
-                <span class="edu-date">2015 - 2016</span>
-
-                <h3>Computer University</h3>
-
-                <h4>Non-Degree Program in Industrial Engineering</h4>
-
-                <p>
-                    Studied fundamental concepts of industrial engineering,
-                    production systems, process optimization,
-                    and manufacturing operations.
-                </p>
-            </div>
-        </div>
-
-        <div class="edu-item">
-            <div class="edu-dot"></div>
-
-            <div class="edu-card">
-                <span class="edu-date">2016 - 2023</span>
-
-                <h3>IPB University</h3>
-
-                <h4>
-                    Bachelor's Degree in Economics of Natural Resources
-                    and the Environment
-                </h4>
-
-                <p>
-                    Developed analytical thinking, economic evaluation,
-                    environmental resource management knowledge,
-                    and problem-solving capabilities.
-                </p>
-            </div>
-        </div>
-
+  <div class="section-label">Education</div>
+  <h2 class="section-title">Education Journey</h2>
+  <div class="edu-timeline-h">
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <div class="edu-card-h">
+        <span class="edu-date">2013 – 2015</span>
+        <h3>Senior High School 1 Cibadak</h3>
+        <h4>Science Major</h4>
+        <p>Built strong foundations in mathematics, science, analytical thinking, leadership, and extracurricular activities.</p>
+      </div>
     </div>
-
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <div class="edu-card-h">
+        <span class="edu-date">2015 – 2016</span>
+        <h3>Computer University</h3>
+        <h4>Non-Degree Program in Industrial Engineering</h4>
+        <p>Studied fundamental IE concepts, production systems, process optimization, and manufacturing operations.</p>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div class="edu-dot"></div>
+      <div class="edu-card-h">
+        <span class="edu-date">2016 – 2023</span>
+        <h3>IPB University</h3>
+        <h4>Bachelor's Degree in Economics of Natural Resources and the Environment</h4>
+        <p>Developed analytical thinking, economic evaluation, and problem-solving capabilities applied to IE practice.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- EXPERIENCE -->
 <section id="experience">
-
-<h2 class="section-title">Professional Experience</h2>
-
-<div class="experience-grid">
-
-    <div class="experience-card">
-
-        <h3>Insdustrial Engineering - PT. Glostar Indonesia</h3>
-
-        <span>2024 - Present</span>
-
-        <ul>
-            <li>Analyzed and calculated cycle time within the shoe manufacturing process to 
-identify efficiency opportunities.</li>
-            <li>Determined optimal manpower allocation and established standard output 
-targets for production lines.</li>
-            <li>Identified and implemented Kaizen initiatives to improve workflow efficiency and 
-reduce waste.</li>
-            <li>Conducted analysis on new product models to estimate required manpower and 
-machinery capacity.</li>
-            <li>Developed and regularly updated line balancing plans to support production 
-efficiency and lean assessment initiatives.</li>
+  <div class="section-label">Experience</div>
+  <h2 class="section-title">Professional Experience</h2>
+  <p class="section-sub">Track record in manufacturing and HR with a focus on measurable results.</p>
+  <div class="exp-timeline">
+    <div class="exp-item">
+      <span class="exp-tag">2024 – Present</span>
+      <div class="exp-company">PT. Glostar Indonesia</div>
+      <div class="exp-role">Industrial Engineer</div>
+      <div class="exp-card">
+        <ul class="exp-bullets">
+          <li>Analyzed and calculated cycle time within the shoe manufacturing process to identify efficiency opportunities.</li>
+          <li>Determined optimal manpower allocation and established standard output targets for production lines.</li>
+          <li>Identified and implemented Kaizen initiatives to improve workflow efficiency and reduce waste.</li>
+          <li>Conducted analysis on new product models to estimate required manpower and machinery capacity.</li>
+          <li>Developed and regularly updated line balancing plans to support production efficiency and lean assessment initiatives.</li>
         </ul>
-
+      </div>
     </div>
-
-    <div class="experience-card">
-
-        <h3>Human Resource Staff - CV. Almughni Distribusi</h3>
-
-        <span>2020 - 2023</span>
-
-        <ul>
-            <li>Manage overall Human Resource operations, including strategic planning and 
-policy implementation.</li>
-            <li>Conduct end-to-end recruitment and onboarding processes to ensure 
-effective employee integration. </li>
-            <li>Administer employee benefits and compensation programs to maintain 
-satisfaction and compliance.</li>
-            
+    <div class="exp-item">
+      <span class="exp-tag">2020 – 2023</span>
+      <div class="exp-company">CV. Almughni Distribusi</div>
+      <div class="exp-role">Human Resource Staff</div>
+      <div class="exp-card">
+        <ul class="exp-bullets">
+          <li>Managed overall HR operations, including strategic planning and policy implementation.</li>
+          <li>Conducted end-to-end recruitment and onboarding processes to ensure effective employee integration.</li>
+          <li>Administered employee benefits and compensation programs to maintain satisfaction and compliance.</li>
         </ul>
-
+      </div>
     </div>
-
-</div>
-
+  </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- SKILLS -->
 <section id="skills">
-
-<h2 class="section-title">Professional Skills</h2>
-
-<div class="skills-container">
-
-    <div class="skill">
-        <span>HR Administration</span>
-        <div class="progress">
-            <div class="progress-bar" style="width:90%"></div>
+  <div class="section-label">Skills</div>
+  <h2 class="section-title">Professional Skills</h2>
+  <p class="section-sub">A blend of core IE technical skills and solid interpersonal capabilities.</p>
+  <div class="skills-wrap">
+    <div>
+      <div class="skill-group-label">Technical – Industrial Engineering</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-name">Line Balancing</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:90%"></div></div>
+          <div class="skill-cat">Core IE</div>
         </div>
-    </div>
-
-    <div class="skill">
-        <span>Recruitment</span>
-        <div class="progress">
-            <div class="progress-bar" style="width:85%"></div>
+        <div class="skill-card">
+          <div class="skill-name">Time &amp; Motion Study</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:85%"></div></div>
+          <div class="skill-cat">Core IE</div>
         </div>
-    </div>
-
-    <div class="skill">
-        <span>Communication</span>
-        <div class="progress">
-            <div class="progress-bar" style="width:95%"></div>
+        <div class="skill-card">
+          <div class="skill-name">Kaizen / Lean</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:82%"></div></div>
+          <div class="skill-cat">Continuous Improvement</div>
         </div>
-    </div>
-
-    <div class="skill">
-        <span>Microsoft Office</span>
-        <div class="progress">
-            <div class="progress-bar" style="width:90%"></div>
+        <div class="skill-card">
+          <div class="skill-name">Capacity Planning</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:78%"></div></div>
+          <div class="skill-cat">Production</div>
         </div>
-    </div>
-
-    <div class="skill">
-        <span>AutoCAD</span>
-        <div class="progress">
-            <div class="progress-bar" style="width:80%"></div>
+        <div class="skill-card">
+          <div class="skill-name">AutoCAD</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:70%"></div></div>
+          <div class="skill-cat">Design Tool</div>
         </div>
-    </div>
-
-    <div class="skill">
-        <span>Photoshop & CorelDRAW</span>
-        <div class="progress">
-            <div class="progress-bar" style="width:80%"></div>
+        <div class="skill-card">
+          <div class="skill-name">Microsoft Office</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:88%"></div></div>
+          <div class="skill-cat">Productivity</div>
         </div>
+      </div>
     </div>
-
-</div>
-
+    <div>
+      <div class="skill-group-label">HR &amp; Soft Skills</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-name">Recruitment</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:88%"></div></div>
+          <div class="skill-cat">HR</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">HR Administration</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:85%"></div></div>
+          <div class="skill-cat">HR</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Communication</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:92%"></div></div>
+          <div class="skill-cat">Interpersonal</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-name">Photoshop &amp; CorelDRAW</div>
+          <div class="skill-bar-bg"><div class="skill-bar" style="width:75%"></div></div>
+          <div class="skill-cat">Design</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="radar-wrap">
+    <h3>📊 Skills Radar Overview</h3>
+    <canvas id="radarChart" width="380" height="320"></canvas>
+  </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">Projects</div>
+  <h2 class="section-title">Featured Projects</h2>
+  <p class="section-sub">Real-world IE projects applying VSM, DMAIC, and lean methodologies to manufacturing challenges.</p>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="vsm">VSM</button>
+    <button class="filter-btn" data-filter="dmaic">DMAIC</button>
+    <button class="filter-btn" data-filter="excel">Excel</button>
+  </div>
+  <div class="projects-grid">
+
+    <!-- PROJECT 1: Improvement Plan by VSM -->
+    <div class="project-card" data-category="vsm lean" onclick="openModal('Improvement Plan by VSM','Mapping alur produksi untuk mengidentifikasi waste dan bottleneck, serta merancang improvement plan berbasis Value Stream Mapping untuk meningkatkan efisiensi lini produksi.',[{label:'VSM',accent:true},{label:'Lean'},{label:'PowerPoint'}],'https://docs.google.com/presentation/d/1PpITK5WsjMzrEIDt8fs7yQIKJhUg6--w/edit?usp=sharing')">
+      <div class="project-thumb">
+        <i class="fa-solid fa-diagram-project"></i>
+        <span class="project-thumb-label">Presentation</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag accent">VSM</span>
+          <span class="project-tag">Lean</span>
+          <span class="project-tag">PowerPoint</span>
+        </div>
+        <div class="project-title">Improvement Plan by VSM</div>
+        <div class="project-desc">Mapping alur produksi untuk mengidentifikasi waste dan bottleneck, serta merancang improvement plan berbasis Value Stream Mapping.</div>
+        <div class="project-footer">
+          <a href="https://docs.google.com/presentation/d/1PpITK5WsjMzrEIDt8fs7yQIKJhUg6--w/edit?usp=sharing" target="_blank" class="project-btn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2: DMAIC Re-Layout -->
+    <div class="project-card" data-category="dmaic six-sigma" onclick="openModal('DMAIC Re-Layout','Implementasi framework DMAIC untuk menganalisis akar penyebab masalah layout dan merancang solusi perbaikan yang terstruktur dan terukur menggunakan metodologi Six Sigma.',[{label:'DMAIC',accent:true},{label:'Six Sigma'},{label:'PowerPoint'}],'https://docs.google.com/presentation/d/1MwkTk3o90-0Yk0PAZFy9LXKrNoZJYShT/edit?usp=sharing')">
+      <div class="project-thumb">
+        <i class="fa-solid fa-chart-pie"></i>
+        <span class="project-thumb-label">Presentation</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag accent">DMAIC</span>
+          <span class="project-tag">Six Sigma</span>
+          <span class="project-tag">PowerPoint</span>
+        </div>
+        <div class="project-title">DMAIC Re-Layout</div>
+        <div class="project-desc">Implementasi framework DMAIC untuk menganalisis akar penyebab masalah layout dan merancang solusi perbaikan yang terstruktur dan terukur.</div>
+        <div class="project-footer">
+          <a href="https://docs.google.com/presentation/d/1MwkTk3o90-0Yk0PAZFy9LXKrNoZJYShT/edit?usp=sharing" target="_blank" class="project-btn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3: VSM Design -->
+    <div class="project-card" data-category="vsm excel design" onclick="openModal('VSM Design','Desain Value Stream Map menggunakan Excel untuk memvisualisasikan alur material dan informasi dalam proses produksi secara detail dan akurat.',[{label:'VSM',accent:true},{label:'Excel'},{label:'Design'}],'https://docs.google.com/spreadsheets/d/1AXQJRrptctxsYMoyoFuuRs2VDqiGEqcO/edit?usp=sharing')">
+      <div class="project-thumb">
+        <i class="fa-solid fa-table-cells"></i>
+        <span class="project-thumb-label">Spreadsheet</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag accent">VSM</span>
+          <span class="project-tag">Excel</span>
+          <span class="project-tag">Design</span>
+        </div>
+        <div class="project-title">VSM Design</div>
+        <div class="project-desc">Desain Value Stream Map menggunakan Excel untuk memvisualisasikan alur material dan informasi dalam proses produksi secara detail.</div>
+        <div class="project-footer">
+          <a href="https://docs.google.com/spreadsheets/d/1AXQJRrptctxsYMoyoFuuRs2VDqiGEqcO/edit?usp=sharing" target="_blank" class="project-btn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HISTORY -->
 <section id="history">
-<h2 class="section-title">History of Me</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<div class="timeline-year">2005</div>
-<div class="timeline-content">
-<h3>Early Life</h3>
-<p>I was born and raised in Sukabumi Regency, the largest regency in West Java, Indonesia. Coming from a humble family, I grew up in an environment where community and relationships played an important role in everyday life.
-
-Being naturally extroverted, I found it easy to adapt to new environments and connect with people from all walks of life.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-year">2012</div>
-<div class="timeline-content">
-<h3>Discovering Curiosity</h3>
-<p>During my junior high school years, I developed interests in many different activities, ranging from sports to music. I was fascinated by learning new things and often jumped from one hobby to another.
-
-This phase taught me an important lesson: growth often begins with the willingness to try something unfamiliar.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-year">2015</div>
-<div class="timeline-content">
-<h3>The Scouting Journey</h3>
-<p>During high school, I joined Scouting after being invited on a hiking trip by a friend. What started as a simple adventure became one of the most influential chapters of my life.
-
-Scouting taught me leadership, teamwork, discipline, resilience, and the courage to step outside my comfort zone.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-year">2015</div>
-<div class="timeline-content">
-<h3>Learning the Art of Communication</h3>
-<p>As part of the Fundraising Team for NGLS, one of the largest outdoor events in West Java, I learned how to approach companies, secure sponsorships, and build valuable partnerships.
-
-This experience taught me that successful communication is not about asking for something, but about creating value for everyone involved.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-year">2015</div>
-<div class="timeline-content">
-<h3>The Entrepreneurial Years</h3>
-<p>After entering university, I discovered a passion for business and entrepreneurship. I explored ventures ranging from online game item trading and event merchandise to food distribution.
-
-These experiences became my real-world business classroom and strengthened my skills in negotiation, sales, and relationship building.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-year">2024</div>
-<div class="timeline-content">
-<h3>Lessons Beyond the Classroom</h3>
-<p>My entrepreneurial journey required significant time and energy, causing my academic journey to take longer than expected.
-
-However, the lessons learned outside the classroom taught me resilience, adaptability, responsibility, financial independence, and persistence.</p>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-year">Present</div>
-<div class="timeline-content">
-<h3>Looking Forward</h3>
-<p>Today, as an Industrial Engineer, I continue to carry lessons from every phase of my life. From leadership and communication to entrepreneurship and continuous learning, each experience has shaped who I am today.
-
-Every challenge is an opportunity to grow, every conversation is a chance to learn, and every experience is another step forward in my journey.</p>
-</div>
-</div>
-
-</div>
+  <div class="section-label">History</div>
+  <h2 class="section-title">History of Me</h2>
+  <p class="section-sub">Every chapter shaped who I am today.</p>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-year">2005</div>
+      <div class="timeline-content">
+        <h3>Early Life</h3>
+        <p>Born and raised in Sukabumi Regency, West Java. Growing up in a community-driven environment made me naturally extroverted and adaptable to new people and situations.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2012</div>
+      <div class="timeline-content">
+        <h3>Discovering Curiosity</h3>
+        <p>Developed diverse interests in sports and music during junior high. Learned that growth begins with the willingness to try something unfamiliar.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2015</div>
+      <div class="timeline-content">
+        <h3>The Scouting Journey</h3>
+        <p>Joined Scouting after a spontaneous hiking trip invitation. One of the most formative experiences — built leadership, discipline, resilience, and comfort with the unknown.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2015</div>
+      <div class="timeline-content">
+        <h3>Learning the Art of Communication</h3>
+        <p>As part of the Fundraising Team for NGLS (one of West Java's largest outdoor events), learned to build partnerships and create value through effective communication.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2015</div>
+      <div class="timeline-content">
+        <h3>The Entrepreneurial Years</h3>
+        <p>Explored ventures from online game trading to food distribution. Real-world classroom for negotiation, sales, and relationship building.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2024</div>
+      <div class="timeline-content">
+        <h3>Lessons Beyond the Classroom</h3>
+        <p>The entrepreneurial path extended my academic journey, but the lessons — resilience, adaptability, financial independence — became core strengths.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">Now</div>
+      <div class="timeline-content">
+        <h3>Looking Forward</h3>
+        <p>As an Industrial Engineer today, every past experience informs how I approach problems, lead teams, and pursue continuous improvement.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- SOCIAL -->
 <section id="social">
-<h2 class="section-title">Social Media</h2>
-
-<div class="content-box">
-<div class="social-links">
-
-<a href="https://wa.me/6282112053971" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<a href="https://linkedin.com/in/mochfikriapriandi" target="_blank">
-<i class="fa-brands fa-linkedin"></i>
-</a>
-
-<a href="https://instagram.com/fikriapriandi" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-
-<a href="https://github.com/fikriapriandi-ai" target="_blank">
-    <i class="fa-brands fa-github"></i>
-</a>
-
-<a href="mailto:fikri.apriandi@gmail.com">
-<i class="fa-solid fa-envelope"></i>
-</a>
-
-</div>
-</div>
+  <div class="section-label">Contact</div>
+  <h2 class="section-title">Let's Connect</h2>
+  <p class="section-sub">Open to new opportunities, collaborations, or just a good conversation about industrial engineering.</p>
+  <div class="contact-grid">
+    <a href="https://wa.me/6282112053971" class="contact-chip" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="https://linkedin.com/in/mochfikriapriandi" class="contact-chip" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://instagram.com/fikriapriandi" class="contact-chip" target="_blank">
+      <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+    <a href="https://github.com/fikriapriandi-ai" class="contact-chip" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+    <a href="mailto:fikri.apriandi@gmail.com" class="contact-chip">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
+  </div>
 </section>
 
 <footer>
-© 2026 Moch Fikri Apriandi. All Rights Reserved.
+  <strong>Moch Fikri Apriandi</strong> · Industrial Engineer<br>
+  <span style="font-size:12px;opacity:0.5;margin-top:6px;display:block;">© 2026 · All Rights Reserved</span>
 </footer>
 
 <script>
-    
-const slides=document.querySelectorAll('.slide');
-let current=0;
+// ── SLIDE SHOW ──
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+setInterval(() => {
+  slides[current].classList.remove('active');
+  current = (current + 1) % slides.length;
+  slides[current].classList.add('active');
+}, 3000);
 
-setInterval(()=>{
-slides[current].classList.remove('active');
-current=(current+1)%slides.length;
-slides[current].classList.add('active');
-},3000);
-</script>
-
-<script>
-
+// ── DARK MODE ──
 const toggle = document.getElementById("theme-toggle");
-
 toggle.addEventListener("click", () => {
-
-    document.body.classList.toggle("dark");
-
-    if(document.body.classList.contains("dark")){
-        toggle.innerHTML = "☀️";
-    }else{
-        toggle.innerHTML = "🌙";
-    }
-
+  document.body.classList.toggle("dark");
+  toggle.innerHTML = document.body.classList.contains("dark") ? "☀️" : "🌙";
+  drawRadar();
 });
-    
-</script>    
 
-<script>
-
+// ── MOBILE MENU ──
 const menuBtn = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector("nav ul");
+menuBtn.addEventListener("click", () => { navMenu.classList.toggle("active"); });
+document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => navMenu.classList.remove('active')));
 
-menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
-
-
-</script>
-    
-<script>
-
-const words = [
-    "Industrial Engineer",
-    "Lean Practitioner",
-    "Problem Solver",
-    "Entrepreneur",
-    "Continuous Learner"
-];
-
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-const typingElement = document.getElementById("typing");
-
-function typeEffect(){
-
-    const currentWord = words[wordIndex];
-
-    if(!isDeleting){
-        typingElement.textContent =
-            currentWord.substring(0, charIndex + 1);
-
-        charIndex++;
-
-        if(charIndex === currentWord.length){
-            isDeleting = true;
-            setTimeout(typeEffect,1500);
-            return;
-        }
-
-    }else{
-
-        typingElement.textContent =
-            currentWord.substring(0, charIndex - 1);
-
-        charIndex--;
-
-        if(charIndex === 0){
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-        }
-    }
-
-    setTimeout(typeEffect, isDeleting ? 50 : 100);
+// ── TYPING EFFECT ──
+const words = ["Industrial Engineer","Lean Practitioner","Problem Solver","Entrepreneur","Continuous Learner"];
+let wordIndex = 0, charIndex = 0, isDeleting = false;
+const typingEl = document.getElementById("typing");
+function typeEffect() {
+  const word = words[wordIndex];
+  typingEl.textContent = isDeleting ? word.substring(0, charIndex - 1) : word.substring(0, charIndex + 1);
+  isDeleting ? charIndex-- : charIndex++;
+  if (!isDeleting && charIndex === word.length) { isDeleting = true; setTimeout(typeEffect, 1500); return; }
+  if (isDeleting && charIndex === 0) { isDeleting = false; wordIndex = (wordIndex + 1) % words.length; }
+  setTimeout(typeEffect, isDeleting ? 50 : 100);
 }
-
 typeEffect();
 
+// ── SCROLL ANIMATIONS ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(el => {
+    if (el.isIntersecting) { el.target.classList.add('visible'); }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.about-card, .exp-item, .skill-card, .project-card, .timeline-item, .edu-item, .contact-chip').forEach(el => {
+  el.classList.add('fade-up');
+  observer.observe(el);
+});
+
+// ── ANIMATED COUNTER (years only) ──
+function animateCounter(el, target, suffix = '') {
+  let count = 0;
+  const step = Math.ceil(target / 40);
+  const timer = setInterval(() => {
+    count += step;
+    if (count >= target) { count = target; clearInterval(timer); }
+    el.innerHTML = count + '<em>' + suffix + '</em>';
+  }, 40);
+}
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(document.getElementById('stat-years'), 2, '+');
+      statsObserver.disconnect();
+    }
+  });
+}, { threshold: 0.5 });
+const statsEl = document.querySelector('.hero-stats');
+if (statsEl) statsObserver.observe(statsEl);
+
+// ── INFINITE KAIZEN COUNTER ──
+const kaizenEl = document.getElementById('stat-kaizen');
+let kaizenCount = 0;
+let spinning = false;
+
+function spinKaizen() {
+  if (spinning) return;
+  spinning = true;
+  kaizenEl.style.animation = 'kaizen-spin 0.3s ease';
+  setTimeout(() => { kaizenEl.style.animation = ''; spinning = false; }, 300);
+}
+
+function tickKaizen() {
+  kaizenCount++;
+  if (kaizenCount > 100) {
+    kaizenCount = 0;
+    // big spin on reset
+    kaizenEl.style.animation = 'kaizen-reset 0.5s ease';
+    setTimeout(() => { kaizenEl.style.animation = ''; }, 500);
+  } else {
+    if (kaizenCount % 7 === 0) spinKaizen();
+  }
+  kaizenEl.innerHTML = kaizenCount + '<em>+</em>';
+  const speed = 80 + Math.sin(kaizenCount * 0.1) * 40;
+  setTimeout(tickKaizen, speed);
+}
+tickKaizen();
+
+// ── SKILL BAR ANIMATION ──
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.skill-bar').forEach(bar => {
+        const w = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => { bar.style.transition = 'width 1s ease'; bar.style.width = w; }, 100);
+      });
+      skillObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+const skillsSection = document.getElementById('skills');
+if (skillsSection) skillObserver.observe(skillsSection);
+
+// ── PROJECT FILTER ──
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.project-card').forEach(card => {
+      if (filter === 'all' || card.dataset.category.includes(filter)) {
+        card.style.display = 'flex';
+        setTimeout(() => card.style.opacity = '1', 10);
+      } else {
+        card.style.opacity = '0';
+        setTimeout(() => card.style.display = 'none', 300);
+      }
+    });
+  });
+});
+
+// ── PROJECT MODAL ──
+function openModal(title, desc, tags, link) {
+  document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-desc').textContent = desc;
+  const tagsEl = document.getElementById('modal-tags');
+  tagsEl.innerHTML = tags.map(t => `<span class="project-tag${t.accent ? ' accent' : ''}">${t.label}</span>`).join('');
+  document.getElementById('modal-link').href = link;
+  const modal = document.getElementById('project-modal');
+  modal.style.display = 'flex';
+  setTimeout(() => modal.classList.add('open'), 10);
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  const modal = document.getElementById('project-modal');
+  modal.classList.remove('open');
+  setTimeout(() => { modal.style.display = 'none'; }, 300);
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ── RADAR CHART ──
+function drawRadar() {
+  const canvas = document.getElementById('radarChart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const isDark = document.body.classList.contains('dark');
+  const W = canvas.width, H = canvas.height;
+  const cx = W / 2, cy = H / 2, r = Math.min(W, H) / 2 - 40;
+  ctx.clearRect(0, 0, W, H);
+
+  const skills = [
+    { label: 'Line Balancing', value: 0.90 },
+    { label: 'Time Study', value: 0.85 },
+    { label: 'Kaizen/Lean', value: 0.82 },
+    { label: 'Capacity Plan', value: 0.78 },
+    { label: 'Communication', value: 0.92 },
+    { label: 'Recruitment', value: 0.88 },
+  ];
+  const n = skills.length;
+  const blue = isDark ? '#5B8DD9' : '#1B3A6B';
+  const accent = isDark ? '#FF7A3D' : '#E8530A';
+  const textColor = isDark ? '#A0AEBF' : '#4A5568';
+  const gridColor = isDark ? 'rgba(91,141,217,0.15)' : 'rgba(27,58,107,0.08)';
+
+  // Draw grid
+  for (let level = 1; level <= 4; level++) {
+    ctx.beginPath();
+    for (let i = 0; i < n; i++) {
+      const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+      const x = cx + (r * level / 4) * Math.cos(angle);
+      const y = cy + (r * level / 4) * Math.sin(angle);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.strokeStyle = gridColor;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // Draw axes
+  for (let i = 0; i < n; i++) {
+    const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + r * Math.cos(angle), cy + r * Math.sin(angle));
+    ctx.strokeStyle = gridColor;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // Draw data
+  ctx.beginPath();
+  skills.forEach((s, i) => {
+    const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+    const x = cx + r * s.value * Math.cos(angle);
+    const y = cy + r * s.value * Math.sin(angle);
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.closePath();
+  ctx.fillStyle = isDark ? 'rgba(91,141,217,0.2)' : 'rgba(27,58,107,0.12)';
+  ctx.fill();
+  ctx.strokeStyle = blue;
+  ctx.lineWidth = 2.5;
+  ctx.stroke();
+
+  // Dots
+  skills.forEach((s, i) => {
+    const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+    const x = cx + r * s.value * Math.cos(angle);
+    const y = cy + r * s.value * Math.sin(angle);
+    ctx.beginPath();
+    ctx.arc(x, y, 5, 0, Math.PI * 2);
+    ctx.fillStyle = accent;
+    ctx.fill();
+    ctx.strokeStyle = 'white';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  });
+
+  // Labels
+  ctx.font = '600 11px Inter, sans-serif';
+  ctx.fillStyle = textColor;
+  ctx.textAlign = 'center';
+  skills.forEach((s, i) => {
+    const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+    const x = cx + (r + 28) * Math.cos(angle);
+    const y = cy + (r + 28) * Math.sin(angle) + 4;
+    ctx.fillText(s.label, x, y);
+  });
+}
+setTimeout(drawRadar, 300);
+window.addEventListener('resize', drawRadar);
 </script>
 
+<!-- PROJECT MODAL -->
+<div id="project-modal" onclick="if(event.target===this)closeModal()" style="
+  position:fixed; inset:0; z-index:9999;
+  background:rgba(10,20,40,0.7); backdrop-filter:blur(6px);
+  align-items:center; justify-content:center; padding:20px;
+  display:none;
+">
+  <div style="
+    background:var(--white); border-radius:20px; max-width:520px; width:100%;
+    padding:2rem; position:relative; box-shadow:0 30px 80px rgba(0,0,0,0.25);
+    animation: modalIn 0.3s ease;
+  ">
+    <button onclick="closeModal()" style="
+      position:absolute; top:16px; right:16px;
+      background:var(--blue-light); border:none; cursor:pointer;
+      width:32px; height:32px; border-radius:50%; font-size:16px;
+      display:flex; align-items:center; justify-content:center; color:var(--text);
+    ">✕</button>
+    <div id="modal-tags" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px;"></div>
+    <h3 id="modal-title" style="font-family:'Space Grotesk',sans-serif; font-size:1.2rem; font-weight:700; color:var(--text); margin-bottom:12px; line-height:1.3;"></h3>
+    <p id="modal-desc" style="font-size:14px; color:var(--text-mid); line-height:1.8; margin-bottom:1.5rem;"></p>
+    <a id="modal-link" href="#" target="_blank" style="
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--blue); color:white; padding:10px 20px;
+      border-radius:8px; text-decoration:none; font-size:14px; font-weight:600;
+    "><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project</a>
+  </div>
+</div>
+
+<style>
+@keyframes modalIn {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+@keyframes kaizen-spin {
+  0%   { transform: scale(1) rotate(0deg); color: var(--blue); }
+  25%  { transform: scale(1.4) rotate(-20deg); color: var(--accent); }
+  50%  { transform: scale(1.6) rotate(15deg); color: var(--blue); }
+  75%  { transform: scale(1.4) rotate(-8deg); color: var(--accent); }
+  100% { transform: scale(1) rotate(0deg); color: var(--blue); }
+}
+@keyframes kaizen-reset {
+  0%   { transform: scale(1) rotate(0deg); color: var(--accent); }
+  20%  { transform: scale(2) rotate(180deg); color: var(--blue); }
+  50%  { transform: scale(0.5) rotate(360deg); color: var(--accent); }
+  80%  { transform: scale(1.4) rotate(400deg); color: var(--blue); }
+  100% { transform: scale(1) rotate(360deg); color: var(--blue); }
+}
+#stat-kaizen { display: inline-block; transition: color 0.2s; }
+#project-modal.open { display: flex !important; }
+/* Scroll animations */
+.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* Stagger children */
+.about-card:nth-child(1) { transition-delay: 0s; }
+.about-card:nth-child(2) { transition-delay: 0.1s; }
+.about-card:nth-child(3) { transition-delay: 0.2s; }
+.about-card:nth-child(4) { transition-delay: 0.3s; }
+.skill-card:nth-child(1) { transition-delay: 0s; }
+.skill-card:nth-child(2) { transition-delay: 0.07s; }
+.skill-card:nth-child(3) { transition-delay: 0.14s; }
+.skill-card:nth-child(4) { transition-delay: 0.21s; }
+.skill-card:nth-child(5) { transition-delay: 0.28s; }
+.skill-card:nth-child(6) { transition-delay: 0.35s; }
+.project-card:nth-child(1) { transition-delay: 0s; }
+.project-card:nth-child(2) { transition-delay: 0.12s; }
+.project-card:nth-child(3) { transition-delay: 0.24s; }
+.timeline-item:nth-child(odd) { transition-delay: 0s; }
+.timeline-item:nth-child(even) { transition-delay: 0.1s; }
+
+/* Filter buttons */
+.filter-bar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:2rem; }
+.filter-btn {
+  background: var(--blue-light); color: var(--blue);
+  border: 1px solid var(--blue-mid); border-radius: 100px;
+  padding: 7px 16px; font-size: 12px; font-weight: 600;
+  cursor: pointer; transition: all 0.2s; letter-spacing: 0.3px;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: var(--blue); color: white; border-color: var(--blue);
+}
+
+/* Radar chart wrapper */
+.radar-wrap {
+  display: flex; flex-direction: column; align-items: center;
+  background: var(--white); border: 0.5px solid var(--border);
+  border-radius: var(--radius); padding: 2rem;
+  margin-top: 2rem;
+}
+.radar-wrap h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px; font-weight: 700; color: var(--text);
+  margin-bottom: 1rem; letter-spacing: 0.3px;
+}
+
+/* Particles */
+#particles-canvas {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none; z-index: 0;
+  opacity: 0.4;
+}
+#home { z-index: 1; }
+header { z-index: 1000; }
+
+/* Project card cursor */
+.project-card { cursor: pointer; }
+</style>
+
+<!-- PARTICLES -->
+<canvas id="particles-canvas"></canvas>
+<script>
+// PARTICLES
+const canvas = document.getElementById('particles-canvas');
+const pctx = canvas.getContext('2d');
+let particles = [];
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+function createParticle() {
+  return {
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    vx: (Math.random() - 0.5) * 0.4,
+    vy: (Math.random() - 0.5) * 0.4,
+    r: Math.random() * 2 + 1,
+    alpha: Math.random() * 0.5 + 0.1,
+  };
+}
+
+for (let i = 0; i < 60; i++) particles.push(createParticle());
+
+function animateParticles() {
+  pctx.clearRect(0, 0, canvas.width, canvas.height);
+  const isDark = document.body.classList.contains('dark');
+  const color = isDark ? '91,141,217' : '27,58,107';
+
+  particles.forEach((p, i) => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0) p.x = canvas.width;
+    if (p.x > canvas.width) p.x = 0;
+    if (p.y < 0) p.y = canvas.height;
+    if (p.y > canvas.height) p.y = 0;
+
+    // Draw connections
+    particles.forEach((p2, j) => {
+      if (j <= i) return;
+      const dx = p.x - p2.x, dy = p.y - p2.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (dist < 120) {
+        pctx.beginPath();
+        pctx.moveTo(p.x, p.y);
+        pctx.lineTo(p2.x, p2.y);
+        pctx.strokeStyle = `rgba(${color},${0.12 * (1 - dist/120)})`;
+        pctx.lineWidth = 0.8;
+        pctx.stroke();
+      }
+    });
+
+    pctx.beginPath();
+    pctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    pctx.fillStyle = `rgba(${color},${p.alpha})`;
+    pctx.fill();
+  });
+
+  requestAnimationFrame(animateParticles);
+}
+animateParticles();
+</script>
 </body>
 </html>
